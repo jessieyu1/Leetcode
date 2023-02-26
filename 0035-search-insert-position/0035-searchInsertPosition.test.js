@@ -1,5 +1,5 @@
 // Import the function to test
-const searchInsert = require("./0035-search-insert-position");
+const searchInsert = require("./0035-searchInsertPosition");
 
 // Test case 1
 let nums = [1, 3, 5, 6];
