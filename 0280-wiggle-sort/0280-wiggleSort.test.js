@@ -1,6 +1,8 @@
 const wiggleSort = require("./0280-wiggleSort");
 
-// Test cases needs to improve
+//TODO: adjust test cases to be more accurate
+
+// Test case 1
 let nums = [3, 5, 2, 1, 6, 4];
 let expectedOutput = [1, 3, 2, 5, 4, 6];
 let actualOutput = wiggleSort(nums);
