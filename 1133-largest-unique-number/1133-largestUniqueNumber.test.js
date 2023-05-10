@@ -33,5 +33,5 @@ expectedOutput = 99;
 actualOutput = largestUniqueNumber(nums);
 console.assert(
   JSON.stringify(actualOutput) === JSON.stringify(expectedOutput),
-  `Expected test case 3 to be ${expectedOutput}, but got ${actualOutput} instead.`
+  `Expected test case 4 to be ${expectedOutput}, but got ${actualOutput} instead.`
 );
