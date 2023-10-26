@@ -1,16 +1,18 @@
 function mySqrt(x) {
-  if (x === 0 || x === 1) {
-    return x;
-  } else if (x === 2) {
-    return 1;
-  } else {
-    for (let s = 2; s < x; s++) {
-      let nearN = s * s;
-      if (nearN === x) {
-        return s;
-      } else if (nearN > x) {
-        return s - 1;
-      }
+  let start = 0;
+  let end = x;
+
+  while (start <= end) {
+    let mid = Math.floor(start + (end - start) / 2);
+
+    if (mid * mid <= x && (mid + 1) * (mid + 1) > x) {
+      return mid;
+    }
+
+    if (mid * mid < x) {
+      start = mid + 1;
+    } else {
+      end = mid - 1;
     }
   }
 }
