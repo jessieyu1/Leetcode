@@ -5,16 +5,15 @@ const search = function (nums, target) {
   if (target < nums[start] && target > nums[end]) return -1;
 
   const pivot = findPivot(nums);
-  console.log(pivot);
+
   if (pivot === 0) return binarySearch(nums, target);
 
   const numsStart = nums.slice(0, pivot);
-  console.log(numsStart);
+
   let result = binarySearch(numsStart, target);
-  console.log(result);
+
   if (result === -1) {
     let numsEnd = nums.slice(pivot);
-    console.log(end);
     result = binarySearch(numsEnd, target);
     if (result !== -1) result += pivot;
   }
@@ -59,7 +58,5 @@ const findPivot = function (nums) {
   }
   return 0;
 };
-
-console.log(findPivot([8, 2]));
 
 module.exports = search;
