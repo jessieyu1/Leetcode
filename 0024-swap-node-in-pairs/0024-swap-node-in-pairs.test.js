@@ -1,4 +1,4 @@
-const swapPairs = require('./0024-make-node-in-pairs');
+const swapPairs = require('./0024-swap-node-in-pairs');
 
 let head = {
     val: 1,
