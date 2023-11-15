@@ -1,14 +1,14 @@
 const canConstruct = require('./0383-ransom-note');
 
-// let ransomNote = 'a';
-// let magazine = 'b';
+let ransomNote = 'a';
+let magazine = 'b';
 
-// let actualOutput = canConstruct(ransomNote, magazine);
+let actualOutput = canConstruct(ransomNote, magazine);
 
-// console.assert(actualOutput === false, `Expected test case 1 to be ${false}, but got ${actualOutput} instead`);
+console.assert(actualOutput === false, `Expected test case 1 to be ${false}, but got ${actualOutput} instead`);
 
-let ransomNote = 'aa';
-let magazine = 'ab';
+ransomNote = 'aa';
+magazine = 'ab';
 
 actualOutput = canConstruct(ransomNote, magazine);
 
