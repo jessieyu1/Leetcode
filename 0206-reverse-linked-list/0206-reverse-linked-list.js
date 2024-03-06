@@ -7,4 +7,18 @@ const reverseList = function (head) {
     return last
 }
 
+
+const reverseListI = function (head) {
+    //iterative
+    let temp = null;
+    let curr = head;
+    let prev = null;
+    while (curr) {
+        temp = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = temp;
+    }
+    return prev;
+}
 module.exports = reverseList;
