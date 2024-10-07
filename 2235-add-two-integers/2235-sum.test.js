@@ -15,5 +15,5 @@ expectedOutput = -6;
 actualOutput = sum(num1, num2);
 console.assert(
   JSON.stringify(actualOutput) === JSON.stringify(expectedOutput),
-  `Expected test case 1 to be ${expectedOutput}, but got ${actualOutput} instead`
+  `Expected test case 2 to be ${expectedOutput}, but got ${actualOutput} instead`
 );
