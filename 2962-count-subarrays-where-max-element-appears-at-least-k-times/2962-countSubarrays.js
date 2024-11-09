@@ -1,9 +1,6 @@
 function countSubarrays(nums, k) {
   let result = 0;
   let max = Math.max(...nums);
-  let numberOfMax = nums.filter((num) => num === max).length;
-  if (numberOfMax < k) return result;
-
   let left = 0;
   let countOfMax = 0;
 
