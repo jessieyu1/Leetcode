@@ -6,7 +6,7 @@ let expectedOutput = [0, 1, 9, 16, 100];
 let actualOutput = sortedSquares(nums);
 console.assert(
   JSON.stringify(actualOutput) === JSON.stringify(expectedOutput),
-  `Expected ${expectedOutput}, but got ${actualOutput} instead`
+  `Expected test case 1 to be ${expectedOutput}, but got ${actualOutput} instead`
 );
 // Test case 2
 nums = [-7, -3, 2, 3, 11];
@@ -14,5 +14,5 @@ expectedOutput = [4, 9, 9, 49, 121];
 actualOutput = sortedSquares(nums);
 console.assert(
   JSON.stringify(actualOutput) === JSON.stringify(expectedOutput),
-  `Expected ${expectedOutput}, but got ${actualOutput} instead`
+  `Expected test case 2 to be${expectedOutput}, but got ${actualOutput} instead`
 );
